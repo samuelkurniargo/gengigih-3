@@ -24,7 +24,6 @@ a {
 .wrapper {
   border: 1px solid white;
 }
-
 /* Left Content */
 .search {
   position: relative;
@@ -155,4 +154,58 @@ a {
 }
 .card > .album-body > h4 {
   padding-bottom: 0.5rem;
+}
+
+.main-played {
+  display: flex;
+}
+
+.song-played {
+  background-color: white;
+  width: 50%;
+  margin-right: 1rem;
+}
+.song-played h2 {
+  margin: 0;
+  padding: 1.25rem 40px 1rem 40px;
+}
+.songs li {
+  display: flex;
+  height: 3.5rem;
+  gap: 1rem;
+  padding: 0.25rem 0px;
+  align-items: center;
+}
+.song-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  height: 100%;
+}
+.song-item img {
+  height: 100%;
+}
+.song-artist-activity {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.song-artist {
+  padding: 0px 1.5rem 1.5rem 1.5rem;
+  background-color: white;
+  width: 100%;
+}
+.list-artist {
+  width: 8rem;
+  display: flex;
+  gap: 1rem;
+}
+.list-artist > img {
+  width: 100%;
+  border-radius: 50%;
+}
+.friends-activity {
+  background-color: white;
+  margin-top: 1rem;
+  flex: auto;
 }
