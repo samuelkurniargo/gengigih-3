@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  background-color: #dae6ee;
+  margin-top: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.left-content {
+  width: 20%;
+  /* background-color: white; */
+  padding: 1.25rem;
+  border-right: 1px solid #b3c7d7;
+}
+.right-content {
+  width: 80%;
+}
+.wrapper {
+  border: 1px solid white;
+}
+
+/* Left Content */
+.search {
+  position: relative;
+}
+.search input {
+  height: 36px;
+  width: 100%;
+  border: 1px solid #7b8e9d;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  background-color: transparent;
+}
+.search i {
+  position: absolute;
+  top: 26%;
+  right: 7%;
+}
+
+.nav-explore {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.nav-explore > button {
+  width: 50%;
+}
+.btn-explore {
+  background-color: #5183e1;
+  color: white;
+  height: 2.25rem;
+  border: none;
+  border-radius: 0.25rem;
+}
+.btn-queue {
+  background-color: transparent;
+  border: none;
+}
+.nav-account-list {
+  padding: 0;
+}
+.nav-account-list > li > p {
+  display: inline-block;
+  padding-left: 0.5rem;
+}
+.recent-podcast-list {
+  padding: 0;
+}
+.recent-podcast-list > li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.recent-podcast-list img {
+  height: 70px;
+  width: 70px;
+  border-radius: 0.25rem;
+  margin-right: 1rem;
+}
+.recent-podcast-list .desc-title {
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+}
+.recent-podcast-list .desc-author {
+  font-size: 14px;
+  margin: 0;
+}
+.playlist-content > ul {
+  padding: 0;
+}
+.playlist-content > ul > li {
+  display: flex;
+  align-items: center;
+  padding-bottom: 0.5rem;
+}
+.playlist-content > ul > li > img {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+.playlist-content > ul > li > p {
+  display: inline-block;
+  padding-left: 1rem;
+  font-weight: bold;
+}
+
+/* Main COntent */
+.main-header {
+  margin-bottom: 20px;
+  display: flex;
+  background-color: white;
+}
+.main-header-left {
+  width: 40%;
+}
+.main-header-left > ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.main-album h1 {
+  margin: 0;
+  padding: 40px 40px 1rem 40px;
+}
+.content-album {
+  background-color: white;
+}
+.nav-album > ul {
+  display: flex;
+  gap: 3rem;
+}
+.album-content > ul {
+  display: flex;
+}
+.card {
+  padding: 1rem;
+  width: 13rem;
+  /* background-color: red; */
+  border-radius: 10%;
+}
+.card img {
+  border-radius: 10%;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.album-body h4,
+.album-body p {
+  margin: 0;
+}
+.card > .album-body > h4 {
+  padding-bottom: 0.5rem;
+}
