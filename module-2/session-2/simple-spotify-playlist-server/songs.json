@@ -3,7 +3,9 @@
     "id": 1,
     "title": "Space Song",
     "artists": [
-      "Beach House"
+      {
+        "name": "Beach House"
+      }
     ],
     "url": "https://open.spotify.com/track/1ujxjsoNvh4XgS2fUNwkZ2?si=ffc9f647dd414b50"
   },
@@ -11,7 +13,9 @@
     "id": 2,
     "title": "Call Me",
     "artists": [
-      "90sFlav"
+      {
+        "name": "90sFlav"
+      }
     ],
     "url": "https://open.spotify.com/track/34A2accnIDPOhkRltN8KJY?si=d270a01e15ef4081"
   },
@@ -19,8 +23,12 @@
     "id": 3,
     "title": "(In My) Solitude",
     "artists": [
-      "Billie Holiday",
-      "Oscar Peterson"
+      {
+        "name": "Billie Holiday"
+      },
+      {
+        "name": "Oscar Peterson"
+      }
     ],
     "url": "https://open.spotify.com/track/2MtATK17vKgw4ANyqPtzBo?si=df0b4312ef9949f7"
   },
@@ -28,7 +36,9 @@
     "id": 4,
     "title": "Demons",
     "artists": [
-      "Imagine Dragons"
+      {
+        "name": "Imagine Dragons"
+      }
     ],
     "url": "https://open.spotify.com/track/5qaEfEh1AtSdrdrByCP7qR?si=215ecedd48334843"
   },
@@ -36,7 +46,9 @@
     "id": 5,
     "title": "Welcome to the Black Parade",
     "artists": [
-      "My Chemical Romance"
+      {
+        "name": "My Chemical Romance"
+      }
     ],
     "url": "https://open.spotify.com/track/5wQnmLuC1W7ATsArWACrgW?si=077f1d235dc049f5"
   },
@@ -44,7 +56,9 @@
     "id": 6,
     "title": "Afterlife",
     "artists": [
-      "Avenged Sevenfold"
+      {
+        "name": "Avenged Sevenfold"
+      }
     ],
     "url": "https://open.spotify.com/track/7zAt4tdL44D3VuzsvM0N8n?si=0c536f779fb94c32"
   }

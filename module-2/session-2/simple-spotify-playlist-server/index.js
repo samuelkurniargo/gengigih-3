@@ -7,15 +7,43 @@ const app = express();
 app.use(express.json());
 
 /*
-    1. Get all list of songs
-    2. Play specific song from playlist
-    3. Add song to playlist
+    1. Get all list of songs                v
+    2. Play specific song from playlist     v
+    3. Add song to playlist                 v
+    4. Get song by name                     v
+    5. Get song by Artist                   v
 */
 
 // Get all songs
 app.get("/songs", (req, res) => {
+  const { title, artists } = req.query;
+
+  let data = [];
+
+  if (title && artists) {
+    data = songs.filter(
+      (song) =>
+        song.title.toLowerCase().includes(title.toLowerCase()) &&
+        song.artists.some((artist) =>
+          artist.name.toLowerCase().includes(artists.toLowerCase())
+        )
+    );
+  } else if (title) {
+    data = songs.filter((song) =>
+      song.title.toLowerCase().includes(title.toLowerCase())
+    );
+  } else if (artists) {
+    data = songs.filter((song) =>
+      song.artists.some((artist) =>
+        artist.name.toLowerCase().includes(artists.toLowerCase())
+      )
+    );
+  } else {
+    data = songs;
+  }
+
   res.send({
-    data: songs,
+    data: data,
   });
 });
 
@@ -23,6 +51,20 @@ app.get("/songs", (req, res) => {
 app.get("/songs/:id", (req, res) => {
   const id = req.params.id;
   const song = songs.filter((song) => song.id === Number(id));
+
+  res.send({
+    data: song,
+  });
+});
+
+app.get("/songs", (req, res) => {
+  // console.log(req.query);
+  const { title, artists } = req.query;
+
+  const song = songs.filter((song) => {
+    // console.log(title);
+    return song.title.toLocaleLowerCase().includes(title.toLowerCase());
+  });
 
   res.send({
     data: song,
