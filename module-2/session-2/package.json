@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "bank": "nodemon gigih-banking-system/index.js",
     "dev": "nodemon simple-spotify-playlist-server/index.js"
   },
   "keywords": [],
