@@ -20,8 +20,8 @@ export function createTransaction(sourceId, destinationId, amount) {
   return transaction;
 }
 export function getAllTransactions() {
-    return transactions;
-  }
+  return transactions;
+}
 
 export function generateTransactionId() {
   return Math.random().toString(36).substring(2, 9);

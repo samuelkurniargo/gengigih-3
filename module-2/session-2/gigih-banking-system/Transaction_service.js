@@ -1,8 +1,4 @@
-import {
-  getCustomer,
-  getAllCustomers,
-  createCustomer,
-} from "./Customer_model.js";
+import { getCustomer } from "./Customer_model.js";
 
 import { createTransaction, getAllTransactions } from "./Transaction_model.js";
 
@@ -26,10 +22,6 @@ export function transfer(sourceId, destinationId, amount) {
   );
   return;
 }
-
 export const getAllTransactionsData = () => {
   return getAllTransactions();
-};
-export const getAllCustomersData = () => {
-  return getAllCustomers();
 };

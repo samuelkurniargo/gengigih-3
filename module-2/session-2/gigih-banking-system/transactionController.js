@@ -1,9 +1,16 @@
 import express from "express";
-import { transfer } from "./Transaction_service";
+import { transfer, getAllTransactionsData } from "./Transaction_service.js";
 
 const app = express();
 
 app.use(express.json());
+
+app.get("/transaction", (req, res) => {
+  const transaction = getAllTransactionsData();
+  res.json({
+    data: transaction,
+  });
+});
 
 app.post("/transaction", (req, res) => {
   try {
