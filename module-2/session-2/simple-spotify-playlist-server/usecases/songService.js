@@ -1,4 +1,9 @@
-import { getAllSongs, getSongById, addSong } from "../entities/songModel.js";
+import {
+  getAllSongs,
+  getSongById,
+  addSong,
+  playSong,
+} from "../entities/songModel.js";
 
 export function getAllSongsService() {
   return getAllSongs();
@@ -6,6 +11,10 @@ export function getAllSongsService() {
 
 export function getSongByIdService(songId) {
   return getSongById(songId);
+}
+
+export function playSongService(songId) {
+  return playSong(songId);
 }
 
 export function addSongService(title, artist, url) {
