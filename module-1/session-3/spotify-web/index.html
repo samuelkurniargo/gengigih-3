@@ -10,242 +10,256 @@
 </head>
 
 <body>
-  <div class="left-content">
-    <h2>Spotify</h2>
-    <div class="nav-header">
-      <div class="search">
-        <input type="text" placeholder="Search for music...">
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </div>
-      <div class="nav-explore">
-        <button class="btn-explore">Explore</button>
-        <button class="btn-queue">Queue</button>
-      </div>
-      <div class="nav-account">
-        <ul class="nav-account-list">
-          <li>
-            <i class="fa-solid fa-user"></i>
-            <p>My Account</p>
-          </li>
-          <li>
-            <i class="fa-solid fa-heart"></i>
-            <p>Favourite</p>
-          </li>
-          <li>
-            <i class="fa-solid fa-music"></i>
-            <p>Overview</p>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="wrapper"></div>
-    <div class="nav-podcast">
-      <div class="nav-podcast-header">
-        <h3>Recent Podcast</h3>
-      </div>
-      <div class="recent-podcast">
-        <ul class="recent-podcast-list">
-          <li>
-            <img src="https://i.scdn.co/image/ab67656300005f1f957f1f1932bcfbae480eacb3" alt="">
-            <div class="desc">
-              <p class="desc-title">Rintik Sendu</p>
-              <p class="desc-author">Rintiksedu</p>
-            </div>
-          </li>
-          <li>
-            <img src="https://i.scdn.co/image/ab67656300005f1fd0393656bbd0013a88e58e2a" alt="">
-            <div class="desc">
-              <p class="desc-title">Pengembangan Diri</p>
-              <p class="desc-author">Andreas Bordes x Box2BoxID</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="wrapper"></div>
-    <div class="nav-playlist">
-      <div class="playlist-header">
-        <h3>Your Playlist</h3>
-      </div>
-      <div class="playlist-content">
+  <div class="container">
+    <div class="left">
+      <div class="nav-button">
         <ul>
           <li>
-            <img src="https://i.scdn.co/image/ab67706f00000002abaf6c3c6a4b29f8a4565a86" alt="">
-            <p>Rintik Sendu</p>
+            <a href="http://spotify.com">
+              <i class="fa-solid fa-home"></i>
+              <span>Home</span></a>
           </li>
           <li>
-            <img src="https://i.scdn.co/image/ab67706f00000002abaf6c3c6a4b29f8a4565a86" alt="">
-            <p>Pengembangan diri</p>
-          </li>
-          <li>
-            <img src="https://i.scdn.co/image/ab67706f00000002abaf6c3c6a4b29f8a4565a86" alt="">
-            <p>Pengembangan diri</p>
-          </li>
-          <li>
-            <img src="https://i.scdn.co/image/ab67706f00000002abaf6c3c6a4b29f8a4565a86" alt="">
-            <p>Pengembangan diri</p>
-          </li>
-          <li>
-            <img src="https://i.scdn.co/image/ab67706f00000002abaf6c3c6a4b29f8a4565a86" alt="">
-            <p>Pengembangan diri</p>
+            <a href="http://open.spotify.com/search">
+              <i class="fa-solid fa-search"></i>
+              <span>Search</span></a>
           </li>
         </ul>
+      </div>
+      <div class="nav-library">
+        <div>
+          <div class="header-nav">
+            <div class="header-nav-wrapper">
+              <div class="library-icon">
+                <div>
+                  <i class="fa-solid fa-book"></i>
+                  <span>Your Library</span>
+                </div>
+              </div>
+              <button class="btn-create-playlist" aria-label="Create playlist or folder"
+                data-encore-id="buttonTertiary">
+                <span aria-hidden="true" class="iconWrapper">
+                  <svg role="img" height="16" width="16" aria-hidden="true" viewBox="0 0 16 16" data-encore-id="icon"
+                    class="Svg-sc-ytk21e-0 haNxPq">
+                    <path
+                      d="M15.25 8a.75.75 0 0 1-.75.75H8.75v5.75a.75.75 0 0 1-1.5 0V8.75H1.5a.75.75 0 0 1 0-1.5h5.75V1.5a.75.75 0 0 1 1.5 0v5.75h5.75a.75.75 0 0 1 .75.75z">
+                    </path>
+                  </svg>
+                </span>
+              </button>
+              <button class="btn-enlarge-playlist">
+                <span aria-hidden="true" class="iconWrapper"><svg role="img" height="16" width="16" aria-hidden="true"
+                    viewBox="0 0 16 16" data-encore-id="icon" class="Svg-sc-ytk21e-0 leya-dW">
+                    <path
+                      d="M7.19 1A.749.749 0 0 1 8.47.47L16 7.99l-7.53 7.521a.75.75 0 0 1-1.234-.815.75.75 0 0 1 .174-.243l5.72-5.714H.75a.75.75 0 1 1 0-1.498h12.38L7.41 1.529a.749.749 0 0 1-.22-.53z">
+                    </path>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+          <div class="nav-btn-list">
+            <button class="btn rounded">Playlist</button>
+            <button class="btn rounded">Artist</button>
+            <button class="btn rounded">Podcast</button>
+          </div>
+          <div class="playlist-wrapper">
+            <div class="search-container">
+              <div class="search-icon">
+                <button class="btn-search">
+                  <i class="fa-solid fa-search"></i>
+                </button>
+              </div>
+              <div class="recent-icon">
+                <button class="btn-recent">
+                  <span>Recents</span>
+                  <i class="fa-solid fa-sort-down"></i>
+                </button>
+              </div>
+            </div>
+            <div>
+              <ul class="list-playlist">
+                <li>Liked Song</li>
+                <li>Beat Up</li>
+                <li>Chill</li>
+                <li>Party</li>
+                <li>Liked Song</li>
+                <li>Beat Up</li>
+                <li>Chill</li>
+                <li>Party</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="homepage">
+        <div class="greeting-title">
+          <h2 style="color: white;">Good Afternoon</h2>
+          <div class="recent-played">
+            <div class="long-card">
+              <div class="card-image">
+                <img aria-hidden="false" draggable="false" loading="lazy"
+                  src="https://i.scdn.co/image/ab6761610000e5ebf426f143c46ff54d8486f2d0" data-testid="shortcut-image"
+                  alt="" class="mMx2LUixlnN_Fu45JpFB WWDxafTPs4AgThdcX5jN Yn2Ei5QZn19gria6LjZj">
+              </div>
+              <div class="card-body">
+                <div class="playlist-title">
+                  <a href="#" style="display: block;">Two Door Cinema Club</a>
+                </div>
+                <div class="button-play">
+                  <button class="btn-played">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="long-card">
+              <div class="card-image">
+                <img aria-hidden="false" draggable="false" loading="lazy"
+                  src="https://i.scdn.co/image/ab6761610000e5ebf426f143c46ff54d8486f2d0" data-testid="shortcut-image"
+                  alt="" class="mMx2LUixlnN_Fu45JpFB WWDxafTPs4AgThdcX5jN Yn2Ei5QZn19gria6LjZj">
+              </div>
+              <div class="card-body">
+                <div class="playlist-title">
+                  <a href="#" style="display: block;">Two Door Cinema Club</a>
+                </div>
+                <div class="button-play">
+                  <button class="btn-played">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="long-card">
+              <div class="card-image">
+                <img aria-hidden="false" draggable="false" loading="lazy"
+                  src="https://i.scdn.co/image/ab6761610000e5ebf426f143c46ff54d8486f2d0" data-testid="shortcut-image"
+                  alt="" class="mMx2LUixlnN_Fu45JpFB WWDxafTPs4AgThdcX5jN Yn2Ei5QZn19gria6LjZj">
+              </div>
+              <div class="card-body">
+                <div class="playlist-title">
+                  <a href="#" style="display: block;">Two Door Cinema Club</a>
+                </div>
+                <div class="button-play">
+                  <button class="btn-played">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="recent-played">
+            <div class="long-card">
+              <div class="card-image">
+                <img aria-hidden="false" draggable="false" loading="lazy"
+                  src="https://i.scdn.co/image/ab6761610000e5ebf426f143c46ff54d8486f2d0" data-testid="shortcut-image"
+                  alt="" class="mMx2LUixlnN_Fu45JpFB WWDxafTPs4AgThdcX5jN Yn2Ei5QZn19gria6LjZj">
+              </div>
+              <div class="card-body">
+                <div class="playlist-title">
+                  <a href="#" style="display: block;">Two Door Cinema Club</a>
+                </div>
+                <div class="button-play">
+                  <button class="btn-played">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="long-card">
+              <div class="card-image">
+                <img aria-hidden="false" draggable="false" loading="lazy"
+                  src="https://i.scdn.co/image/ab6761610000e5ebf426f143c46ff54d8486f2d0" data-testid="shortcut-image"
+                  alt="" class="mMx2LUixlnN_Fu45JpFB WWDxafTPs4AgThdcX5jN Yn2Ei5QZn19gria6LjZj">
+              </div>
+              <div class="card-body">
+                <div class="playlist-title">
+                  <a href="#" style="display: block;">Two Door Cinema Club</a>
+                </div>
+                <div class="button-play">
+                  <button class="btn-played">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="long-card">
+              <div class="card-image">
+                <img aria-hidden="false" draggable="false" loading="lazy"
+                  src="https://i.scdn.co/image/ab6761610000e5ebf426f143c46ff54d8486f2d0" data-testid="shortcut-image"
+                  alt="" class="mMx2LUixlnN_Fu45JpFB WWDxafTPs4AgThdcX5jN Yn2Ei5QZn19gria6LjZj">
+              </div>
+              <div class="card-body">
+                <div class="playlist-title">
+                  <a href="#" style="display: block;">Two Door Cinema Club</a>
+                </div>
+                <div class="button-play">
+                  <button class="btn-played">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
-  <div class="right-content">
-    <div class="main-header rounded">
-      <div class="main-header-left">
-        <ul>
-          <li>Overview</li>
-          <li>Collection</li>
-          <li>Playlist</li>
-          <li>Followers</li>
-          <li>Following</li>
-        </ul>
-      </div>
-    </div>
-    <div class="main-album ">
-      <div class="content-album rounded">
-        <h1>Bring Me The Horizon</h1>
-        <div class="nav-album">
-          <ul>
-            <li>Artist</li>
-            <li class="active">Album</li>
-            <li>Songs</li>
-          </ul>
+  <div class="footer">
+    <div class="song-player-menu">
+      <div class="left-menu">
+        <div class="song-menu-image">
+          <img src="https://i.scdn.co/image/ab67616d00004851dc1c6525ae41e296529bcbbb">
         </div>
-        <div class="album-content">
-          <ul>
-            <li>
-              <div class="album card">
-                <img src="https://i.scdn.co/image/ab67616d00001e025149c948fde506624246a684" alt="">
-                <div class="album-body">
-                  <h4>Post Human: Survival Horror</h4>
-                  <p>2020</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="album card">
-                <img src="https://i.scdn.co/image/ab67616d00001e02b75f7297bea89ed838a58a82" alt="">
-                <div class="album-body">
-                  <h4>Live at the Royal Albert Hall</h4>
-                  <p>2020</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="album card">
-                <img src="https://i.scdn.co/image/ab67616d00001e0249e3b7e85829da2fbc68bc46" alt="">
-                <div class="album-body">
-                  <h4>Amo</h4>
-                  <p>2019</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="album card">
-                <img src="https://i.scdn.co/image/ab67616d00001e02736145b97bab8fa92cb6113f" alt="">
-                <div class="album-body">
-                  <h4>That's The Spirit</h4>
-                  <p>2015</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="album card">
-                <img src="https://i.scdn.co/image/ab67616d00001e0260cf7c8dd93815ccd6cb4830" alt="">
-                <div class="album-body">
-                  <h4>Sempiternal (Expanded Edition)</h4>
-                  <p>2013</p>
-                </div>
-              </div>
-            </li>
-          </ul>
+        <div class="song-menu-desc">
+          <span class="song-title">
+            <a href="spotify.com/album/1PKL24mnakuCYCZkHgKgwJ" style="font-size: 14px;">Won't Do Nothing</a>
+          </span>
+          <span class="song-artist">
+            <a href="spotify.com/artist/536BYVgOnRky0xjsPT96zl" style="font-size: 11px;">Two Door Cinema Club</a>
+          </span>
         </div>
+        <button class="like-icon">
+          <i class="fa-regular fa-heart"></i>
+        </button>
+        <button class="minimize-icon">
+          <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+            <g fill="currentColor" fill-rule="evenodd">
+              <path d="M1 3v9h14V3H1zm0-1h14a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z"
+                fill-rule="nonzero"></path>
+              <path d="M10 8h4v3h-4z"></path>
+            </g>
+          </svg>
+        </button>
       </div>
-    </div>
-    <div class="main-played">
-      <div class="song-played">
-        <div class="title">
-          <h2>Recently Played</h2>
-          <div class="song-list">
-            <ul class="songs">
-              <li>
-                <h5>1.</h5>
-                <div class="song-item">
-                  <img src="https://i.scdn.co/image/ab67616d00001e0260cf7c8dd93815ccd6cb4830" alt="">
-                  <h4>Can You Feel My Heart</h4>
-                </div>
-                <p>3:48</p>
-              </li>
-              <li>
-                <h5>1.</h5>
-                <div class="song-item">
-                  <img src="https://i.scdn.co/image/ab67616d00001e0260cf7c8dd93815ccd6cb4830" alt="">
-                  <h4>Can You Feel My Heart</h4>
-                </div>
-                <p>3:48</p>
-              </li>
-              <li>
-                <h5>1.</h5>
-                <div class="song-item">
-                  <img src="https://i.scdn.co/image/ab67616d00001e0260cf7c8dd93815ccd6cb4830" alt="">
-                  <h4>Can You Feel My Heart</h4>
-                </div>
-                <p>3:48</p>
-              </li>
-              <li>
-                <h5>1.</h5>
-                <div class="song-item">
-                  <img src="https://i.scdn.co/image/ab67616d00001e0260cf7c8dd93815ccd6cb4830" alt="">
-                  <h4>Can You Feel My Heart</h4>
-                </div>
-                <p>3:48</p>
-              </li>
-              <li>
-                <h5>1.</h5>
-                <div class="song-item">
-                  <img src="https://i.scdn.co/image/ab67616d00001e0260cf7c8dd93815ccd6cb4830" alt="">
-                  <h4>Can You Feel My Heart</h4>
-                </div>
-                <p>3:48</p>
-              </li>
-              <li>
-                <h5>1.</h5>
-                <div class="song-item">
-                  <img src="https://i.scdn.co/image/ab67616d00001e0260cf7c8dd93815ccd6cb4830" alt="">
-                  <h4>Can You Feel My Heart</h4>
-                </div>
-                <p>3:48</p>
-              </li>
-            </ul>
+      <div class="main-menu">
+        <div class="player-control-btn">
+          <div class="left-control-btn">
+            <button class="btn-shuffle"><i class="fa-solid fa-shuffle"></i></button>
+            <button class="btn-prev"><i class="fa-solid fa-backward-step"></i></button>
+          </div>
+          <button class="btn-play">
+            <i class="fa-solid fa-play"></i>
+          </button>
+          <div class="right-control-btn">
+            <button class="btn-next"><i class="fa-solid fa-forward-step"></i></button>
+            <button class="btn-repeat"><i class="fa-solid fa-forward-step"></i></button>
           </div>
         </div>
-      </div>
-      <div class="song-artist-activity">
-        <div class="song-artist">
-          <h3>Artist</h3>
-          <div class="list-artist">
-            <img src="https://i.scdn.co/image/ab676161000051741ffa2e19b87dceb11074b564" alt="">
-            <img src="https://i.scdn.co/image/ab676161000051741ffa2e19b87dceb11074b564" alt="">
-            <img src="https://i.scdn.co/image/ab676161000051741ffa2e19b87dceb11074b564" alt="">
-          </div>
+        <div class="playback-bar">
+
         </div>
-        <div class="friends-activity">
-          <div class="playlist-content">
-            <ul>
-              <li>
-                <img src="https://i.scdn.co/image/ab67706f00000002abaf6c3c6a4b29f8a4565a86" alt="">
-                <p>Rintik Sendu</p>
-              </li>
-              <li>
-                <img src="https://i.scdn.co/image/ab67706f00000002abaf6c3c6a4b29f8a4565a86" alt="">
-                <p>Pengembangan diri</p>
-              </li>
-            </ul>
-          </div>
+      </div>
+      <div class="right-menu">
+        <button class="btn-playing"><i class="fa-solid fa-music"></i></button>
+        <button class="btn-lyrics"><i class="fa-solid fa-microphone"></i></button>
+        <button class="btn-track-queue"><i class="fa-solid fa-layer-group"></i></button>
+        <button class="btn-device"><i class="fa-solid fa-computer"></i></button>
+        <div class="volume">
+          <button class="btn-volume"><i class="fa-solid fa-volume-low"></i></button>
         </div>
       </div>
     </div>

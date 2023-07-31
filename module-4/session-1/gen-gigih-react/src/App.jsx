@@ -1,11 +1,11 @@
 import "./App.css";
-import Sidebar from "./sidebar";
 // import Profile from "./profile";
+import List from "./Family";
 
 function App() {
   return (
     <>
-      <Sidebar />
+      <List />
     </>
   );
 }
