@@ -1,5 +1,5 @@
 import "./App.css";
-import Homepage from "../../../spotify-react/src/Homepage";
+import Homepage from "./Homepage";
 import Footer from "./Footer";
 
 function App() {
